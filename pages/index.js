@@ -51,14 +51,7 @@ const Home = ({ posts }) => (
         </link>
       </Head>
 
-      <div className="hero">
-        <h1 className="hero-title">SADIK G.</h1>
-        <div className="hero-social-links">
-          <Link href="https://www.instagram.com/sadkholmes/?hl=en">
-            <a className="social-link">Instagram</a>
-          </Link>
-        </div>
-      </div>
+      
 
 
       <div className="row">
@@ -70,6 +63,14 @@ const Home = ({ posts }) => (
         </div>
 
         <div className="col-md-6">
+        <div className="hero">
+        <h1 className="hero-title">SADIK G.</h1>
+        <div className="hero-social-links">
+          <Link href="https://www.instagram.com/sadkholmes/?hl=en">
+            <a className="social-link">Instagram</a>
+          </Link>
+        </div>
+      </div>
 
         {posts.map(post => (
         <div class="" className="blog">
@@ -99,16 +100,7 @@ const Home = ({ posts }) => (
       </div>
 
     </div>
-          {/* footer */}
-          <div>
-        <footer className="bg-success">
-
-          <div className="col-md-12">
-            <p className="text-center">made by sadkholmes</p>
-
-          </div>
-        </footer>
-      </div>
+          
   </body>
 
 );
