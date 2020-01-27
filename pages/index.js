@@ -52,7 +52,7 @@ const Home = ({ posts }) => (
       </Head>
 
       <div className="hero">
-        <h1 className="hero-title">SADIK</h1>
+        <h1 className="hero-title">SADIK G.</h1>
         <div className="hero-social-links">
           <Link href="https://www.instagram.com/sadkholmes/?hl=en">
             <a className="social-link">Instagram</a>
