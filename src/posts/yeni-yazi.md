@@ -1,3 +1,3 @@
 cümleten meraba...
 ağalar
-[link](www.google.com)
+[link](www.google.com.tr)
