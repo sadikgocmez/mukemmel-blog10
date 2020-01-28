@@ -17,11 +17,19 @@ const Home = ({ posts }) => (
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
+            <a className="nav-link" href="#">Hakkımızda <span className="sr-only">(current)</span></a>
+          </li>
+          <li className="nav-item active">
             <a className="nav-link" href="#">Bişeyler <span className="sr-only">(current)</span></a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">Başka Bişeyler</a>
           </li>
+
+          <li className="nav-item">
+            <a className="nav-link" href="#">iletişim</a>
+          </li>
+
         </ul>
       </div>
     </nav>
@@ -33,7 +41,7 @@ const Home = ({ posts }) => (
 
       <div className="col-md-4">
 
-
+{/* logo tasarımı yapıp buraya konulacak */}
 
       </div>
       <div className="col-md-8">
@@ -41,7 +49,7 @@ const Home = ({ posts }) => (
         <div className="jumbotron jumbotron-fluid bg-white">
           <div className="container">
             <h1 className="display-4">Sadkholmes</h1>
-            <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <p className="lead">Burada kodlama öğrenme sürecime dair yazılar bulacaksınız.</p>
           </div>
         </div>
 
@@ -90,7 +98,11 @@ const Home = ({ posts }) => (
                 </Link>
               </h2>
               <div className="blog-text">
-                <ReactMarkdown source={post.details} />
+
+                <ReactMarkdown source={post.ozet} />
+                <Link href={post.slug}>
+                  <a className="blog-title-link">Devamını Oku</a>
+                </Link>
               </div>
               <div className="blog-date">{post.date}</div>
 
@@ -106,7 +118,7 @@ const Home = ({ posts }) => (
         </div>
         <div className="col-md-3">
           <div className="card" styleName="width: 18rem;">
-            <img src="..." className="card-img-top" alt="..."></img>
+            <img src="../images/images.jpg" className="card-img-top" alt="..."></img>
             <div className="card-body">
               <h5 className="card-title">Card title</h5>
               <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
