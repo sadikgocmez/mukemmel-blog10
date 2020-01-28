@@ -23,6 +23,9 @@ const BlogPost = ({ post }) => (
             <a className="nav-link" href="#">Pricing</a>
           </li>
           <li className="nav-item">
+            <a className="nav-link" href="http://localhost:3000/admin.js">Admin Panel</a>
+          </li>
+          <li className="nav-item">
             <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
@@ -46,7 +49,7 @@ const BlogPost = ({ post }) => (
       </Head>
 
       <div className="hero">
-        <h1 className="hero-title">SadIk</h1>
+        <h1 className="hero-title">Sadkholmes</h1>
         <div className="hero-social-links">
           <Link href="https://www.instagram.com/sadkholmes/?hl=en">
             <a className="social-link">Instagram</a>
@@ -113,7 +116,7 @@ const BlogPost = ({ post }) => (
     <footer className="page-footer font-small blue">
 
       <div className="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+          <a href="https://mdbootstrap.com/education/bootstrap/"> By Sadkholmes</a>
       </div>
 
     </footer>

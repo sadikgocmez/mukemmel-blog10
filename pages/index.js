@@ -17,13 +17,16 @@ const Home = ({ posts }) => (
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">Hakkımızda <span className="sr-only">(current)</span></a>
+            <a className="nav-link" href="#">Bana Dair <span className="sr-only">(current)</span></a>
           </li>
           <li className="nav-item active">
             <a className="nav-link" href="#">Bişeyler <span className="sr-only">(current)</span></a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">Başka Bişeyler</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="admin.js">Admin Panel</a>
           </li>
 
           <li className="nav-item">
@@ -153,7 +156,7 @@ const Home = ({ posts }) => (
     <footer className="page-footer font-small blue">
 
       <div className="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://www.instagram.com/sadkholmes/?hl=en"> Made By Sadkholmes</a>
+    <a href="https://www.instagram.com/sadkholmes/?hl=en"> By Sadkholmes</a>
       </div>
 
     </footer>
