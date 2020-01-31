@@ -5,6 +5,7 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 
 
+
 const Home = ({ posts }) => (
 
   <body>
@@ -17,7 +18,7 @@ const Home = ({ posts }) => (
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">Bana Dair <span className="sr-only">(current)</span></a>
+            <a className="nav-link" href="../src/about.js">Bana Dair<span className="sr-only">(current)</span></a>
           </li>
           <li className="nav-item active">
             <a className="nav-link" href="#">Bişeyler <span className="sr-only">(current)</span></a>
@@ -30,7 +31,7 @@ const Home = ({ posts }) => (
           </li>
 
           <li className="nav-item">
-            <a className="nav-link" href="#">iletişim</a>
+            <a className="nav-link" href="">iletişim</a>
           </li>
 
         </ul>
@@ -43,9 +44,7 @@ const Home = ({ posts }) => (
 
 
       <div className="col-md-4">
-
-{/* logo tasarımı yapıp buraya konulacak */}
-
+        {/* logo vb */}
       </div>
       <div className="col-md-8">
 
@@ -87,14 +86,14 @@ const Home = ({ posts }) => (
           <div className="hero">
             <h1 className="hero-title">sadkholmes</h1>
             <div className="hero-social-links">
-              <Link href="https://www.instagram.com/sadkholmes/?hl=en">
-                <a className="social-link">Instagram</a>
+              <Link href="http://localhost:3000/mukemmel-blog10/components/about.js">
+                <a className="social-link">İnstagram</a>
               </Link>
             </div>
           </div>
 
           {posts.map(post => (
-            <div class="" className="blog">
+            <div className="card-body blog">
               <h2 className="blog-title">
                 <Link href={post.slug}>
                   <a className="blog-title-link">{post.title}</a>
@@ -121,7 +120,7 @@ const Home = ({ posts }) => (
         </div>
         <div className="col-md-3">
           <div className="card" styleName="width: 18rem;">
-            <img src="../images/images.jpg" className="card-img-top" alt="..."></img>
+            <img src="CVLZ3166.jpg" className="card-img-top" alt="..."></img>
             <div className="card-body">
               <h5 className="card-title">Card title</h5>
               <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -169,7 +168,7 @@ const Home = ({ posts }) => (
 
 Home.getInitialProps = async ({ req }) => {
   // TODO: aşağıdaki satırda bulunan adresi kendi sunucu adresinle değiştirmelisin
-  const res = await fetch("http://mukemmel-blog10.herokuapp.com/api/posts");
+  const res = await fetch("http://localhost:3000/api/posts");
   const json = await res.json();
   return { posts: json.posts };
 };

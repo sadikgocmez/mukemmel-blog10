@@ -1,4 +1,0 @@
-cümleten meraba...
-ağalar
-
-

@@ -6,7 +6,7 @@ import ReactMarkdown from "react-markdown";
 
 const BlogPost = ({ post }) => (
   <body>
-    <nav className="navbar navbar-expand-lg  navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <a className="navbar-brand" href="http://localhost:3000">Anasayfa</a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -14,20 +14,22 @@ const BlogPost = ({ post }) => (
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+            <a className="nav-link" href="#">Bana Dair</a>
+          </li>
+          <li className="nav-item active">
+            <a className="nav-link" href="#">Bişeyler <span className="sr-only">(current)</span></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Features</a>
+            <a className="nav-link" href="#">Başka Bişeyler</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Pricing</a>
+            <a className="nav-link" href="admin.js">Admin Panel</a>
           </li>
+
           <li className="nav-item">
-            <a className="nav-link" href="http://localhost:3000/admin.js">Admin Panel</a>
+            <a className="nav-link" href="#">iletişim</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
+
         </ul>
       </div>
     </nav>
@@ -51,7 +53,7 @@ const BlogPost = ({ post }) => (
       <div className="hero">
         <h1 className="hero-title">Sadkholmes</h1>
         <div className="hero-social-links">
-          <Link href="https://www.instagram.com/sadkholmes/?hl=en">
+          <Link href="../components/about.js">
             <a className="social-link">Instagram</a>
           </Link>
         </div>
@@ -61,10 +63,10 @@ const BlogPost = ({ post }) => (
 
         <div className="col-md-9">
 
-          <div className="blog">
+          <div className=" card-body blog">
             <h2 className="blog-title">
               <Link href="/test">
-                <a className="blog-title-link">{post.title}</a>
+                <Link className="blog-title-link">{post.title}</Link>
               </Link>
             </h2>
             <div className="blog-text">
@@ -77,7 +79,7 @@ const BlogPost = ({ post }) => (
 
         <div className="col-md-3">
           <div className="card" styleName="width: 18rem;">
-            <img src="../images/images.jpg" className="card-img-top" alt="..."></img>
+            <img src="CVLZ3166.jpg" className="card-img-top" alt="..."></img>
             <div className="card-body">
               <h5 className="card-title">Card title</h5>
               <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -125,7 +127,7 @@ const BlogPost = ({ post }) => (
 
 BlogPost.getInitialProps = async ({ req, query }) => {
   // TODO: aşağıdaki satırda bulunan adresi kendi sunucu adresinle değiştirmelisin
-  const res = await fetch(`http://mukemmel-blog10.herokuapp.com/api/post/${query.postId}`);
+  const res = await fetch(`http://localhost:3000/api/post/${query.postId}`);
   const json = await res.json();
   return { post: json.post };
 };
