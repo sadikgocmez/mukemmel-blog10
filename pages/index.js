@@ -11,7 +11,7 @@ const Home = ({ posts }) => (
   <body>
 
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
-      <a className="navbar-brand" href="http://localhost:3000">Anasayfa</a>
+      <a className="navbar-brand" href="http://mukemmel-blog10.herokuapp.com">Anasayfa</a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -44,14 +44,18 @@ const Home = ({ posts }) => (
 
 
       <div className="col-md-4">
-        {/* logo vb */}
+        
+
+        {/* logo olabilir */}
       </div>
       <div className="col-md-8">
 
         <div className="jumbotron jumbotron-fluid bg-white">
           <div className="container">
-            <h1 className="display-4">Sadkholmes</h1>
-            <p className="lead">Burada kodlama öğrenme sürecime dair yazılar bulacaksınız.</p>
+            <h1 className="display-4">Sadkholmes </h1><Link href="https://www.instagram.com/sadkholmes/?hl=tr">
+              <a className="social-link"> Sadkholmes&İnstagram</a>
+            </Link>
+            <p className="lead">Burada kodlama öğrenme sürecime dair yazılar bulacaksınız. Bulamıyorsanız, bu kodlama öğrenemediğim anlamına gelir ve sanal dünya çöplüğünde yerimi almış olurum. Sevgiler... </p>
           </div>
         </div>
 
@@ -83,14 +87,6 @@ const Home = ({ posts }) => (
 
         <div className="col-md-9">
 
-          <div className="hero">
-            <h1 className="hero-title">sadkholmes</h1>
-            <div className="hero-social-links">
-              <Link href="http://localhost:3000/mukemmel-blog10/components/about.js">
-                <a className="social-link">İnstagram</a>
-              </Link>
-            </div>
-          </div>
 
           {posts.map(post => (
             <div className="card-body blog">
@@ -120,29 +116,24 @@ const Home = ({ posts }) => (
         </div>
         <div className="col-md-3">
           <div className="card" styleName="width: 18rem;">
-            <img src="CVLZ3166.jpg" className="card-img-top" alt="..."></img>
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
+              <h6 className="card-title">Setup'a bas </h6>
+              <p className="card-text">sonra next next next. Bill GATES</p>
             </div>
           </div>
           <br></br>
           <div className="card" styleName="width: 18rem;">
-            <img src="..." className="card-img-top" alt="..."></img>
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
+              <h5 className="card-title">REKLAM</h5>
+              <p className="card-text"> Yok yok, şimdilik o kadar da değil. </p>
             </div>
           </div>
           <br></br>
           <div className="card" styleName="width: 18rem;">
-            <img src="..." className="card-img-top" alt="..."></img>
             <div className="card-body">
               <h5 className="card-title">Card title</h5>
               <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
+
             </div>
           </div>
 

@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown";
 const BlogPost = ({ post }) => (
   <body>
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
-      <a className="navbar-brand" href="http://localhost:3000">Anasayfa</a>
+      <a className="navbar-brand" href="http://mukemmel-blog10.herokuapp.com">Anasayfa</a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -50,14 +50,7 @@ const BlogPost = ({ post }) => (
 
       </Head>
 
-      <div className="hero">
-        <h1 className="hero-title">Sadkholmes</h1>
-        <div className="hero-social-links">
-          <Link href="../components/about.js">
-            <a className="social-link">Instagram</a>
-          </Link>
-        </div>
-      </div>
+      
 
       <div className="row">
 
@@ -79,29 +72,24 @@ const BlogPost = ({ post }) => (
 
         <div className="col-md-3">
           <div className="card" styleName="width: 18rem;">
-            <img src="CVLZ3166.jpg" className="card-img-top" alt="..."></img>
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
+              <h6 className="card-title">Setup'a bas </h6>
+              <p className="card-text">sonra next next next. Bill GATES</p>
             </div>
           </div>
           <br></br>
           <div className="card" styleName="width: 18rem;">
-            <img src="..." className="card-img-top" alt="..."></img>
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
+              <h5 className="card-title">REKLAM</h5>
+              <p className="card-text"> Yok yok, şimdilik o kadar da değil. </p>
             </div>
           </div>
           <br></br>
           <div className="card" styleName="width: 18rem;">
-            <img src="..." className="card-img-top" alt="..."></img>
             <div className="card-body">
               <h5 className="card-title">Card title</h5>
               <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
+
             </div>
           </div>
 
